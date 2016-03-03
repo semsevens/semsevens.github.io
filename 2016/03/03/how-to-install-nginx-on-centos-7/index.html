@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>CentOS7下安装Nginx | SSS&#39;s Blog</title>
+    <title>CentOS7 下安装 Nginx | SSS&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="semsevens">
     
 
     
-    <meta name="description" content="&amp;#x6DFB;&amp;#x52A0;Nginx&amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7&amp;#x662F;&amp;#x6CA1;&amp;#x6709;Nginx&amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
+    <meta name="description" content="&amp;#x6DFB;&amp;#x52A0; Nginx &amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7 &amp;#x662F;&amp;#x6CA1;&amp;#x6709; Nginx &amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CentOS7下安装Nginx">
+<meta property="og:title" content="CentOS7 下安装 Nginx">
 <meta property="og:url" content="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/index.html">
 <meta property="og:site_name" content="SSS's Blog">
-<meta property="og:description" content="&amp;#x6DFB;&amp;#x52A0;Nginx&amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7&amp;#x662F;&amp;#x6CA1;&amp;#x6709;Nginx&amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
-<meta property="og:updated_time" content="2016-03-03T12:56:56.962Z">
+<meta property="og:description" content="&amp;#x6DFB;&amp;#x52A0; Nginx &amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7 &amp;#x662F;&amp;#x6CA1;&amp;#x6709; Nginx &amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
+<meta property="og:updated_time" content="2016-03-03T13:00:41.770Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS7下安装Nginx">
-<meta name="twitter:description" content="&amp;#x6DFB;&amp;#x52A0;Nginx&amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7&amp;#x662F;&amp;#x6CA1;&amp;#x6709;Nginx&amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
+<meta name="twitter:title" content="CentOS7 下安装 Nginx">
+<meta name="twitter:description" content="&amp;#x6DFB;&amp;#x52A0; Nginx &amp;#x4ED3;&amp;#x5E93;&amp;#x9ED8;&amp;#x8BA4;&amp;#x60C5;&amp;#x51B5;&amp;#x4E0B;&amp;#xFF0C;CentOS7 &amp;#x662F;&amp;#x6CA1;&amp;#x6709; Nginx &amp;#x5305;&amp;#x7684;&amp;#x3002;&amp;#x6240;&amp;#x4EE5;&amp;#xFF1A;">
 <link rel="publisher" href="112745194994968685776">
 
     
@@ -45,7 +45,7 @@
 				<h1 class="site-name"><a href="/" title="SSS&#39;s Blog">SSS&#39;s Blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -61,7 +61,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:semsevens.com">
 					</form>
 					
@@ -77,30 +77,30 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/03/03/how-to-install-nginx-on-centos-7/" title="CentOS7下安装Nginx" itemprop="url">CentOS7下安装Nginx</a>
+      <a href="/2016/03/03/how-to-install-nginx-on-centos-7/" title="CentOS7 下安装 Nginx" itemprop="url">CentOS7 下安装 Nginx</a>
   </h1>
   <p class="article-author">By
        
 		<a href="https://plus.google.com/112745194994968685776?rel=author" title="semsevens" target="_blank" itemprop="author">semsevens</a>
 		
   <p class="article-time">
-    <time datetime="2016-03-03T12:30:23.000Z" itemprop="datePublished"> Published 2016-03-03</time>
+    <time datetime="2016-03-03T12:30:23.000Z" itemprop="datePublished"> 发表于 2016-03-03</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加Nginx仓库"><span class="toc-number">1.</span> <span class="toc-text">添加Nginx仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Nginx"><span class="toc-number">2.</span> <span class="toc-text">安装Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Nginx"><span class="toc-number">3.</span> <span class="toc-text">配置Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启Nginx"><span class="toc-number">4.</span> <span class="toc-text">开启Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自启"><span class="toc-number">5.</span> <span class="toc-text">添加自启</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加-Nginx-仓库"><span class="toc-number">1.</span> <span class="toc-text">添加 Nginx 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Nginx"><span class="toc-number">2.</span> <span class="toc-text">安装 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-Nginx"><span class="toc-number">3.</span> <span class="toc-text">配置 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启-Nginx"><span class="toc-number">4.</span> <span class="toc-text">开启 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自启"><span class="toc-number">5.</span> <span class="toc-text">添加自启</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="&#x6DFB;&#x52A0;Nginx&#x4ED3;&#x5E93;"><a href="#&#x6DFB;&#x52A0;Nginx&#x4ED3;&#x5E93;" class="headerlink" title="&#x6DFB;&#x52A0;Nginx&#x4ED3;&#x5E93;"></a>&#x6DFB;&#x52A0;Nginx&#x4ED3;&#x5E93;</h2><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>CentOS7</code>&#x662F;&#x6CA1;&#x6709;Nginx&#x5305;&#x7684;&#x3002;<br>&#x6240;&#x4EE5;&#xFF1A;<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install epel-release</span><br></pre></td></tr></table></figure></p>
-<h2 id="&#x5B89;&#x88C5;Nginx"><a href="#&#x5B89;&#x88C5;Nginx" class="headerlink" title="&#x5B89;&#x88C5;Nginx"></a>&#x5B89;&#x88C5;Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install nginx</span><br></pre></td></tr></table></figure>
-<h2 id="&#x914D;&#x7F6E;Nginx"><a href="#&#x914D;&#x7F6E;Nginx" class="headerlink" title="&#x914D;&#x7F6E;Nginx"></a>&#x914D;&#x7F6E;Nginx</h2><p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728; <code>/etc/nginx/nginx.conf</code><br>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure></p>
-<h2 id="&#x5F00;&#x542F;Nginx"><a href="#&#x5F00;&#x542F;Nginx" class="headerlink" title="&#x5F00;&#x542F;Nginx"></a>&#x5F00;&#x542F;Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl start nginx</span><br></pre></td></tr></table></figure>
+		<h2 id="&#x6DFB;&#x52A0;-Nginx-&#x4ED3;&#x5E93;"><a href="#&#x6DFB;&#x52A0;-Nginx-&#x4ED3;&#x5E93;" class="headerlink" title="&#x6DFB;&#x52A0; Nginx &#x4ED3;&#x5E93;"></a>&#x6DFB;&#x52A0; Nginx &#x4ED3;&#x5E93;</h2><p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;CentOS7 &#x662F;&#x6CA1;&#x6709; Nginx &#x5305;&#x7684;&#x3002;<br>&#x6240;&#x4EE5;&#xFF1A;<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install epel-release</span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x5B89;&#x88C5;-Nginx"><a href="#&#x5B89;&#x88C5;-Nginx" class="headerlink" title="&#x5B89;&#x88C5; Nginx"></a>&#x5B89;&#x88C5; Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yum install nginx</span><br></pre></td></tr></table></figure>
+<h2 id="&#x914D;&#x7F6E;-Nginx"><a href="#&#x914D;&#x7F6E;-Nginx" class="headerlink" title="&#x914D;&#x7F6E; Nginx"></a>&#x914D;&#x7F6E; Nginx</h2><p>&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728; <code>/etc/nginx/nginx.conf</code><br>&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x5DF1;&#x7684;&#x9700;&#x8981;&#xFF0C;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure></p>
+<h2 id="&#x5F00;&#x542F;-Nginx"><a href="#&#x5F00;&#x542F;-Nginx" class="headerlink" title="&#x5F00;&#x542F; Nginx"></a>&#x5F00;&#x542F; Nginx</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl start nginx</span><br></pre></td></tr></table></figure>
 <p>&#x5F00;&#x542F;&#x540E;&#xFF0C;&#x8BBF;&#x95EE;&#x8BD5;&#x8BD5;&#xFF1A;<code>http://server_domain_name_or_IP/</code></p>
 <h2 id="&#x6DFB;&#x52A0;&#x81EA;&#x542F;"><a href="#&#x6DFB;&#x52A0;&#x81EA;&#x542F;" class="headerlink" title="&#x6DFB;&#x52A0;&#x81EA;&#x542F;"></a>&#x6DFB;&#x52A0;&#x81EA;&#x542F;</h2><p>&#x8FD9;&#x662F;&#x5F88;&#x5E38;&#x7528;&#x7684;&#xFF0C;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ systemctl enable nginx</span><br></pre></td></tr></table></figure></p>
 <p>&#x81F3;&#x6B64;&#xFF0C;Nginx &#x5C31;&#x5B89;&#x88C5;&#x597D;&#x5566;&#x3002;</p>
@@ -121,7 +121,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/" data-title="CentOS7下安装Nginx | SSS&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/" data-title="CentOS7 下安装 Nginx | SSS&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -147,27 +147,27 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/03/03/how-to-install-nginx-on-centos-7/" data-title="CentOS7下安装Nginx" data-url="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/"></div>
+	<div class="ds-thread" data-thread-key="2016/03/03/how-to-install-nginx-on-centos-7/" data-title="CentOS7 下安装 Nginx" data-url="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/"></div>
 </section>
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加Nginx仓库"><span class="toc-number">1.</span> <span class="toc-text">添加Nginx仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Nginx"><span class="toc-number">2.</span> <span class="toc-text">安装Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置Nginx"><span class="toc-number">3.</span> <span class="toc-text">配置Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启Nginx"><span class="toc-number">4.</span> <span class="toc-text">开启Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自启"><span class="toc-number">5.</span> <span class="toc-text">添加自启</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#添加-Nginx-仓库"><span class="toc-number">1.</span> <span class="toc-text">添加 Nginx 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装-Nginx"><span class="toc-number">2.</span> <span class="toc-text">安装 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置-Nginx"><span class="toc-number">3.</span> <span class="toc-text">配置 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#开启-Nginx"><span class="toc-number">4.</span> <span class="toc-text">开启 Nginx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#添加自启"><span class="toc-number">5.</span> <span class="toc-text">添加自启</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="semsevens" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -179,7 +179,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			
@@ -199,7 +199,7 @@
 
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -212,7 +212,7 @@
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -445,7 +445,7 @@ $(document).ready(function(){
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
