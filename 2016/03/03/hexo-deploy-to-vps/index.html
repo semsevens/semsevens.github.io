@@ -17,7 +17,7 @@
 <meta property="og:url" content="http://semsevens.com/2016/03/03/hexo-deploy-to-vps/index.html">
 <meta property="og:site_name" content="SSS's Blog">
 <meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E; [GitCafe][GitCafe] &amp;#x88AB; [Conding][Conding] &amp;#x6536;&amp;#x8D2D;&amp;#x4E86;&amp;#xFF0C;&amp;#x539F;&amp;#x672C;&amp;#x60F3;&amp;#x8981;&amp;#x7528; [DNSPod][DNSPod] &amp;#x5C06;&amp;#x56FD;&amp;#x5185;&amp;#x7EB">
-<meta property="og:updated_time" content="2016-03-03T16:36:59.115Z">
+<meta property="og:updated_time" content="2016-03-03T16:38:38.022Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="部署Hexo到VPS">
 <meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x7531;&amp;#x4E8E; [GitCafe][GitCafe] &amp;#x88AB; [Conding][Conding] &amp;#x6536;&amp;#x8D2D;&amp;#x4E86;&amp;#xFF0C;&amp;#x539F;&amp;#x672C;&amp;#x60F3;&amp;#x8981;&amp;#x7528; [DNSPod][DNSPod] &amp;#x5C06;&amp;#x56FD;&amp;#x5185;&amp;#x7EB">
@@ -45,7 +45,7 @@
 				<h1 class="site-name"><a href="/" title="SSS&#39;s Blog">SSS&#39;s Blog</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -61,7 +61,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:semsevens.com">
 					</form>
 					
@@ -84,14 +84,14 @@
 		<a href="https://plus.google.com/112745194994968685776?rel=author" title="semsevens" target="_blank" itemprop="author">semsevens</a>
 		
   <p class="article-time">
-    <time datetime="2016-03-03T12:06:52.000Z" itemprop="datePublished"> Published 2016-03-03</time>
+    <time datetime="2016-03-03T12:06:52.000Z" itemprop="datePublished"> 发表于 2016-03-03</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
 			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VPS-配置"><span class="toc-number">2.</span> <span class="toc-text">VPS 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地配置"><span class="toc-number">3.</span> <span class="toc-text">本地配置</span></a></li></ol>
 		
@@ -131,9 +131,10 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim post-receive</span><br></pre></td></tr></table></figure>
 <p>&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
 <blockquote>
-<p>#!/bin/bash -l<br>GIT_REPO=/home/git/hexo.git<br>TMP_GIT_CLONE=/home/git/tmp/hexo_tmp<br>PUBLIC_WWW=/home/wwwroot/hexo<br>rm -rf ${TMP_GIT_CLONE}<br>git clone $GIT_REPO $TMP_GIT_CLONE<br>rm -rf ${PUBLIC_WWW}/<em><br>cp -rf ${TMP_GIT_CLONE}/</em> ${PUBLIC_WWW}<br>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF1A;<br>&#x79FB;&#x9664;&#x539F;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x62F7;&#x8D1D;&#x65B0;&#x4ED3;&#x5E93;&#x7684;&#x5185;&#x5BB9;&#x5230;&#x6839;&#x76EE;&#x5F55;&#x3002;<br>&#x522B;&#x5FD8;&#x4E86;&#x7ED9;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x52A0;&#x4E0A;&#x6267;&#x884C;&#x6743;&#x9650;&#xFF1A;</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chmod +x post-receive</span><br></pre></td></tr></table></figure>
+<p>#!/bin/bash -l<br>GIT_REPO=/home/git/hexo.git<br>TMP_GIT_CLONE=/home/git/tmp/hexo_tmp<br>PUBLIC_WWW=/home/wwwroot/hexo<br>rm -rf ${TMP_GIT_CLONE}<br>git clone $GIT_REPO $TMP_GIT_CLONE<br>rm -rf ${PUBLIC_WWW}/<em><br>cp -rf ${TMP_GIT_CLONE}/</em> ${PUBLIC_WWW}</p>
 </blockquote>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x7684;&#x4F5C;&#x7528;&#x662F;&#xFF1A;<br>&#x79FB;&#x9664;&#x539F;&#x7F51;&#x7AD9;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x540E;&#xFF0C;&#x62F7;&#x8D1D;&#x65B0;&#x4ED3;&#x5E93;&#x7684;&#x5185;&#x5BB9;&#x5230;&#x6839;&#x76EE;&#x5F55;&#x3002;<br>&#x522B;&#x5FD8;&#x4E86;&#x7ED9;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x52A0;&#x4E0A;&#x6267;&#x884C;&#x6743;&#x9650;&#xFF1A;</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ chmod +x post-receive</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Nginx &#x8BBE;&#x7F6E;<br>&#x6211;&#x9ED8;&#x8BA4;&#x4F60;&#x5DF2;&#x7ECF;&#x5B89;&#x88C5;&#x4E86; <a href="http://baike.baidu.com/link?url=-ZhrZv0kJ7I4SvuVrK58eglGQJS97DWin2sfhA8Fro-pM0O0X9J0yPudbCZdw6T4wTEv2S17whzNb_J03Vv_wK" target="_blank" rel="external">Nginx</a>&#xFF0C;<br>&#x82E5;&#x672A;&#x5B89;&#x88C5;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;<br><a href="http://semsevens.com/2016/03/03/how-to-install-nginx-on-centos-7/">CentOS7 &#x4E0B;&#x5B89;&#x88C5; Nginx</a><br>&#x5B89;&#x88C5;&#x597D; Nginx &#x540E;&#xFF0C;&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim /etc/nginx/nginx.conf</span><br></pre></td></tr></table></figure>
@@ -207,22 +208,22 @@
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VPS-配置"><span class="toc-number">2.</span> <span class="toc-text">VPS 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地配置"><span class="toc-number">3.</span> <span class="toc-text">本地配置</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="semsevens" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -234,7 +235,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			
@@ -254,7 +255,7 @@
 
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -267,7 +268,7 @@
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -500,7 +501,7 @@ $(document).ready(function(){
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
