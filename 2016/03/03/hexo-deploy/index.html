@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="semsevens">
 <meta property="og:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x535A;&amp;#x5BA2;&amp;#x642D;&amp;#x5EFA;&amp;#x597D;&amp;#x540E;&amp;#xFF0C;&amp;#x5982;&amp;#x4F55;&amp;#x90E8;&amp;#x7F72;&amp;#x5462;&amp;#xFF1F;&amp;#x53EF;&amp;#x4EE5;&amp;#x9009;&amp;#x62E9;&amp;#x90E8;&amp;#x7F72;&amp;#x5230;GitHub&amp;#x4E0A;&amp;#x53BB;&amp;#">
 <meta property="og:image" content="http://semsevens.com/2016/03/03/hexo-deploy/github-create-repository.jpg">
-<meta property="og:updated_time" content="2016-03-03T04:55:14.569Z">
+<meta property="og:updated_time" content="2016-03-03T05:47:38.130Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客的部署">
 <meta name="twitter:description" content="&amp;#x524D;&amp;#x8A00;&amp;#x535A;&amp;#x5BA2;&amp;#x642D;&amp;#x5EFA;&amp;#x597D;&amp;#x540E;&amp;#xFF0C;&amp;#x5982;&amp;#x4F55;&amp;#x90E8;&amp;#x7F72;&amp;#x5462;&amp;#xFF1F;&amp;#x53EF;&amp;#x4EE5;&amp;#x9009;&amp;#x62E9;&amp;#x90E8;&amp;#x7F72;&amp;#x5230;GitHub&amp;#x4E0A;&amp;#x53BB;&amp;#">
@@ -47,7 +47,7 @@
 				<h1 class="site-name"><a href="/" title="semsevens">semsevens</a></h1>
 				<h2 class="blog-motto"></h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -63,7 +63,7 @@
  					
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
 						<input type="hidden" name="q" value="site:semsevens.com">
 					</form>
 					
@@ -86,26 +86,42 @@
 		<a href="https://plus.google.com/112745194994968685776?rel=author" title="semsevens" target="_blank" itemprop="author">semsevens</a>
 		
   <p class="article-time">
-    <time datetime="2016-03-03T03:27:50.000Z" itemprop="datePublished"> Published 2016-03-03</time>
+    <time datetime="2016-03-03T03:27:50.000Z" itemprop="datePublished"> 发表于 2016-03-03</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到GitHub"><span class="toc-number">2.</span> <span class="toc-text">部署到GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#注册设置GitHub"><span class="toc-number">2.1.</span> <span class="toc-text">注册设置GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步文章至GitHub"><span class="toc-number">2.2.</span> <span class="toc-text">同步文章至GitHub</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub设置"><span class="toc-number">2.</span> <span class="toc-text">GitHub设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地设置"><span class="toc-number">3.</span> <span class="toc-text">本地设置</span></a></li></ol>
 		
 		</div>
 		
-		<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x535A;&#x5BA2;&#x642D;&#x5EFA;&#x597D;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x90E8;&#x7F72;&#x5462;&#xFF1F;<br>&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x90E8;&#x7F72;&#x5230;<a href="https://github.com" target="_blank" rel="external">GitHub</a>&#x4E0A;&#x53BB;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x5230;<a href="https://gitcafe.com" target="_blank" rel="external">GitCafe</a>&#x3002;<br>&#x56FD;&#x5916;&#x7684;&#x8BDD;&#xFF0C;GitCafe&#x8BBF;&#x95EE;&#x6BD4;&#x8F83;&#x5FEB;&#xFF1B;&#x56FD;&#x5185;&#x7684;&#x8BDD;&#xFF0C;GitCafe&#x8BBF;&#x95EE;&#x6BD4;&#x8F83;&#x5FEB;&#x3002;<br>&#x5982;&#x679C;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x535A;&#x5BA2;&#x540C;&#x65F6;&#x90E8;&#x7F72;&#x5230;GitHub&#x548C;GitCafe&#x3002;<br>&#x7136;&#x540E;&#xFF0C;&#x7528;<a href="http://www.dnspod.cn" target="_blank" rel="external">DNSPod</a>&#x5206;&#x6D41;&#xFF0C;&#x5C06;&#x56FD;&#x5916;&#x7684;&#x7EBF;&#x8DEF;&#x5BFC;&#x5411;GitHub&#xFF0C;&#x5C06;&#x56FD;&#x5185;&#x7684;&#x7EBF;&#x8DEF;&#x5BFC;&#x5411;GitCafe&#x3002;<br><a id="more"></a></p>
-<h2 id="&#x90E8;&#x7F72;&#x5230;GitHub"><a href="#&#x90E8;&#x7F72;&#x5230;GitHub" class="headerlink" title="&#x90E8;&#x7F72;&#x5230;GitHub"></a>&#x90E8;&#x7F72;&#x5230;GitHub</h2><h3 id="&#x6CE8;&#x518C;&#x8BBE;&#x7F6E;GitHub"><a href="#&#x6CE8;&#x518C;&#x8BBE;&#x7F6E;GitHub" class="headerlink" title="&#x6CE8;&#x518C;&#x8BBE;&#x7F6E;GitHub"></a>&#x6CE8;&#x518C;&#x8BBE;&#x7F6E;GitHub</h3><ol>
+		<h2 id="&#x524D;&#x8A00;"><a href="#&#x524D;&#x8A00;" class="headerlink" title="&#x524D;&#x8A00;"></a>&#x524D;&#x8A00;</h2><p>&#x535A;&#x5BA2;&#x642D;&#x5EFA;&#x597D;&#x540E;&#xFF0C;&#x5982;&#x4F55;&#x90E8;&#x7F72;&#x5462;&#xFF1F;<br>&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x90E8;&#x7F72;&#x5230;<a href="https://github.com" target="_blank" rel="external">GitHub</a>&#x4E0A;&#x53BB;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x90E8;&#x7F72;&#x5230;<a href="https://gitcafe.com" target="_blank" rel="external">GitCafe</a>&#x3002;<br>&#x56FD;&#x5916;&#x7684;&#x8BDD;&#xFF0C;GitCafe&#x8BBF;&#x95EE;&#x6BD4;&#x8F83;&#x5FEB;&#xFF1B;&#x56FD;&#x5185;&#x7684;&#x8BDD;&#xFF0C;GitCafe&#x8BBF;&#x95EE;&#x6BD4;&#x8F83;&#x5FEB;&#x3002;<br>&#x5982;&#x679C;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x535A;&#x5BA2;&#x540C;&#x65F6;&#x90E8;&#x7F72;&#x5230;GitHub&#x548C;GitCafe&#x3002;<br>&#x7136;&#x540E;&#xFF0C;&#x7528;<a href="http://www.dnspod.cn" target="_blank" rel="external">DNSPod</a>&#x5206;&#x6D41;&#xFF0C;&#x5C06;&#x56FD;&#x5916;&#x7684;&#x7EBF;&#x8DEF;&#x5BFC;&#x5411;GitHub&#xFF0C;&#x5C06;&#x56FD;&#x5185;&#x7684;&#x7EBF;&#x8DEF;&#x5BFC;&#x5411;GitCafe&#x3002;<br>&#x4F46;&#x662F;&#x5462;&#xFF0C;GitCafe&#x6700;&#x8FD1;&#x88AB;CODING&#x5408;&#x5E76;&#x540E;:<br><a id="more"></a></p>
+<blockquote>
+<p>GitCafe &#x5C06;&#x4E8E; 2016&#x5E74;5&#x6708;31&#x65E5; &#x505C;&#x6B62;&#x6240;&#x6709;&#x670D;&#x52A1;&#xFF0C;&#x5C4A;&#x65F6;&#x60A8;&#x5728; GitCafe &#x7684;&#x8D26;&#x6237;&#x8D44;&#x6599;&#x53CA;&#x6240;&#x6709;&#x9879;&#x76EE;&#x90FD;&#x5C06;&#x88AB;&#x6C38;&#x4E45;&#x5220;&#x9664;&#xFF0C;&#x8BF7;&#x5C3D;&#x5FEB;&#x5C06;&#x60A8;&#x7684;&#x8D44;&#x6599;&#x548C;&#x9879;&#x76EE;&#x8FC1;&#x79FB;&#x81F3; Coding<br>&#x8868;&#x793A;&#x65E0;&#x5948;&#xFF0C;&#x8FD8;&#x662F;GitHub<strong>&#x9760;&#x8C31;</strong>&#x3002;<br>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x9009;&#x62E9;&#x53EA;&#x90E8;&#x7F72;&#x5230; GitHub&#x4E0A;&#x3002;</p>
+</blockquote>
+<h2 id="GitHub&#x8BBE;&#x7F6E;"><a href="#GitHub&#x8BBE;&#x7F6E;" class="headerlink" title="GitHub&#x8BBE;&#x7F6E;"></a>GitHub&#x8BBE;&#x7F6E;</h2><ol>
 <li>&#x767B;&#x9646;<a href="https://github.com" target="_blank" rel="external">GitHub</a>&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8D26;&#x53F7;&#x5C31;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x3002;</li>
 <li>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;<code>repository</code>&#xFF0C;<code>name</code>&#x5FC5;&#x987B;&#x548C;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;&#x4E00;&#x81F4;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<code>semsevens.github.io</code><br>&#x5F53;&#x7136;&#xFF0C;&#x6211;&#x7684;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x8FC7;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x63D0;&#x793A;&#x5DF2;&#x5B58;&#x5728;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#xFF1A;<br><img src="/2016/03/03/hexo-deploy/github-create-repository.jpg" alt="github-create-repository"></li>
-<li>&#x521B;&#x5EFA;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x7B49;&#x5F85;&#x51E0;&#x5206;&#x949F;&#x5BA1;&#x6838;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E86;&#xFF1A;<a href="http://semsevens.github.io" target="_blank" rel="external">http://semsevens.github.io</a></li>
+<li>&#x521B;&#x5EFA;&#x597D;&#x4E4B;&#x540E;&#xFF0C;&#x7B49;&#x5F85;&#x51E0;&#x5206;&#x949F;&#x5BA1;&#x6838;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E86;&#xFF1A;<a href="http://semsevens.github.io" target="_blank" rel="external">http://semsevens.github.io</a>  </li>
 </ol>
-<h3 id="&#x540C;&#x6B65;&#x6587;&#x7AE0;&#x81F3;GitHub"><a href="#&#x540C;&#x6B65;&#x6587;&#x7AE0;&#x81F3;GitHub" class="headerlink" title="&#x540C;&#x6B65;&#x6587;&#x7AE0;&#x81F3;GitHub"></a>&#x540C;&#x6B65;&#x6587;&#x7AE0;&#x81F3;GitHub</h3>  
+<h2 id="&#x672C;&#x5730;&#x8BBE;&#x7F6E;"><a href="#&#x672C;&#x5730;&#x8BBE;&#x7F6E;" class="headerlink" title="&#x672C;&#x5730;&#x8BBE;&#x7F6E;"></a>&#x672C;&#x5730;&#x8BBE;&#x7F6E;</h2><ol>
+<li>&#x7F16;&#x8F91;&#x535A;&#x5BA2;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;<code>_config.yml</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ vim _config.yml</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>&#x7F16;&#x8F91;&#x5982;&#x4E0B;&#xFF0C;<code>semsevens</code>&#x6362;&#x6210;&#x4F60;&#x7684;<code>username</code></p>
+<blockquote>
+<p>deploy:<br> type: git<br> repo:<br>   github: git@github.com:semsevens/semsevens.github.io.git,master</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2. &#x5728;`source` &#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x65B0;&#x589E;`CNAME`&#x6587;&#x4EF6;</span><br></pre></td></tr></table></figure>
+<p>$ vim source/CNAME<br>```<br>&#x65B0;&#x589E;&#x4F60;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x57DF;&#x540D;&#xFF0C;&#x6BD4;&#x5982;&#xFF0C;&#x6211;&#x7684;&#x662F;&#xFF1A;</p>
+<blockquote>
+<p>semsevens.com</p>
+</blockquote>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -148,22 +164,22 @@
 
 
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#部署到GitHub"><span class="toc-number">2.</span> <span class="toc-text">部署到GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#注册设置GitHub"><span class="toc-number">2.1.</span> <span class="toc-text">注册设置GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#同步文章至GitHub"><span class="toc-number">2.2.</span> <span class="toc-text">同步文章至GitHub</span></a></li></ol></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub设置"><span class="toc-number">2.</span> <span class="toc-text">GitHub设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本地设置"><span class="toc-number">3.</span> <span class="toc-text">本地设置</span></a></li></ol>
  
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="github-card">
-<p class="asidetitle">Github Card</p>
+<p class="asidetitle">Github 名片</p>
 <div class="github-card" data-github="semsevens" data-width="220" data-height="119" data-theme="medium">
 <script type="text/javascript" src="//cdn.jsdelivr.net/github-cards/latest/widget.js" ></script>
 </div>
@@ -175,7 +191,7 @@
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			
@@ -187,7 +203,7 @@
 
 
   <div class="linkslist">
-  <p class="asidetitle">Links</p>
+  <p class="asidetitle">友情链接</p>
     <ul>
         
           <li>
@@ -200,7 +216,7 @@
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>
@@ -443,7 +459,7 @@ var _hmt = _hmt || [];
 <!-- Totop Begin -->
 
 	<div id="totop">
-	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
 	</div>
 	<script src="/js/totop.js"></script>
 
